@@ -19,7 +19,6 @@
 
   <link rel="stylesheet" href="styles.css">
 </head>
-<!-- content - Padding - Border - Margin -->
 
 <body>
   <!-- start of header -->
@@ -28,7 +27,7 @@
       <div class="col col-6 homebtn">
         <a href="homePage.html">Lattitude</a>
       </div>
-      <div class="col col-6 menubuttons divtop">
+      <div class="col col-6 menubuttons headerElement">
 
 
         <nav class="navbar navbar-expand-md navbar-light">
@@ -60,58 +59,59 @@
             </ul>
           </div>
         </nav>
-
-
       </div>
     </div>
   </div>
   <!-- start of main body -->
   <div class="container">
-    <br>
+    <div class="row"> 
+      <br>
       <!-- left side -->
-      <div class="col col-8 col-md-6 divbdy">
-        <br>
-        <h1>Summary: Latitude vs. X</h1>
-        <hr>
-        <img src="images/Fig1.png" alt="Latitude vs. Temperature" width="280" align="left">
-        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To
-          accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500
-          cities.</p>
-        <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors
-          we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the souce data
-          and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and
-          correlations witnesseed.</p>
-        <hr>
+      <div class="col-lg-7 col-md-12">
+        <div class="boxElement">
+          <h1>Summary: Latitude vs. X</h1>
+          <hr>
+          <img src="images/Fig1.png" alt="Latitude vs. Temperature" width="280" class="vizualization rounded float-left">
+          <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To
+              accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500
+              cities.</p>
+          <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors
+              we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the souce data
+              and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and
+              correlations witnesseed.</p>
+          <hr>
+        </div>
       </div>
       <!-- left side end -->
       <!-- right side -->
-      <div class="col col-4 col-md-4 divbdy">
-        <br>
-        <h2>Visualizations</h2>
-        <hr>
-        <div class='row'>
-          <div class="col col-3 col-md-6">
-            <a href="visualization-1.html"><img src="images/Fig1.png" alt="Latitude vs. Temperature"></a>
-          </div>
-          <div class="col col-3 col-md-6">
-            <a href="visualization-2.html"><img src="images/Fig2.png" alt="Latitude vs. Humidity"></a>
-          </div>
-          <div class="col col-3 col-md-6">
-            <a href="visualization-3.html"><img src="images/Fig3.png" alt="Latitude vs. Cloudiness"></a>
-          </div>
-          <div class="col col-3 col-md-6">
-            <a href="visualization-4.html"><img src="images/Fig4.png" alt="Latitude vs. Wind Speed"></a>
+      <div class="col-md-5 col-md-">
+        <div class="boxElement">
+          <br>
+          <h2>Visualizations</h2>
+          <hr>
+          <div class='row'>
+            <div class="col col-3 col-md-6">
+              <a href="visualization-1.html"><img src="images/Fig1.png" alt="Latitude vs. Temperature"></a>
+            </div>
+            <div class="col col-3 col-md-6">
+              <a href="visualization-2.html"><img src="images/Fig2.png" alt="Latitude vs. Humidity"></a>
+            </div>
+            <div class="col col-3 col-md-6">
+              <a href="visualization-3.html"><img src="images/Fig3.png" alt="Latitude vs. Cloudiness"></a>
+            </div>
+            <div class="col col-3 col-md-6">
+              <a href="visualization-4.html"><img src="images/Fig4.png" alt="Latitude vs. Wind Speed"></a>
+            </div>
           </div>
         </div>
-      </div>
       <!-- end of right side -->
-    </div>
   </div>
+  
    <!-- start of footer -->
    <br>
    <div>
      <div class="footer">
-       <div class="col col-12 divbtm">© Coppyright Data BootCamp 2020</div>
+       <div class="col col-12 footerElement">© Copyright Data BootCamp 2020</div>
      </div>
    </div>
 </body>

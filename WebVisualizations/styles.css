@@ -1,7 +1,9 @@
 img {
     max-width: 100%;
+    z-index: -1;
   }
-  
+
+
 #imgsel{
     border: lightseagreen 2px solid;
   }
@@ -11,6 +13,11 @@ h1, h2, h3{
     color: lightseagreen;
   }
   
+  .vizualization{
+    border-top-color: white; 
+    width:50%;
+    height:50%;
+  }
 h1{
     font-size: 24px;
     font-weight: bold;
@@ -45,20 +52,13 @@ p{
   
 body {
     width: 100%;
-    min-height:100%;
     background-color: lightgray;
   }
   
 .col {
     width: 100%;
-    /*margin: 50px;*/
- /*   padding-top: 50px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 80px;*/
-    /* border: black 1px solid; */
-    /* Font color */
-    /* color:blue;  */
+
+
   } 
   
 .homebtn{
@@ -79,32 +79,42 @@ body {
     margin: 0px 0px 0px 40px;
   }
   
-.divtop{
+.headerElement{
     background-color: white;
+    width: 100%;
+    border-bottom-color: #0BADA6;
     z-index:2;
   }
   
-.divbdy{
-    /*margin: 70px*/
-    background-color: white;
+.boxElement{
+    margin-top: 60px; 
+    margin-bottom: 62px; 
+    padding: 10px 20px 15px; 
+    color:black;
+    background-color: white; 
     z-index:1;
   }
   
-.divtable{
+.tableElement{
     text-align:center;
     background-color: white;
-    z-index:1;
   }
   
-.divbtm {
-    width:100%;
+.footerElement {
+    background-color: #666666; 
+    border-top-style: solid; 
+    border-top-width: 5px; 
+    border-top-color: #0BADA6;
+    color: white; 
+    min-height: 55px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px; 
+    text-align: center; 
     position: fixed;
-    bottom:0;
-    background-color: gray;
-    z-index:0;
-    font-size: 12px;
-    color: white;
-    text-align: center;
-    padding: 5px;
-    margin: 0px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 15px; 
+    z-index:3;
   }
+
